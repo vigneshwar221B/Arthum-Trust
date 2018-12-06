@@ -7,7 +7,7 @@ import java.lang.Exception
 
 class SplashActivity : AppCompatActivity() {
 
-
+    //For splash screen
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +19,7 @@ class SplashActivity : AppCompatActivity() {
 
             override fun run() {
                 try {
-                    Thread.sleep(5000)
+                    Thread.sleep(5000) // calling mainactivity after 5 seconds
                     val intent = Intent(baseContext,MainActivity::class.java)
                     startActivity(intent)
                 }catch(e: Exception) {

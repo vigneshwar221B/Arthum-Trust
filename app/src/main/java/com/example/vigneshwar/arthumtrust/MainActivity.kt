@@ -19,14 +19,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+    //initializing webview with its attributes
 
         webview.webViewClient = MyWebViewClient()
         webview.settings.javaScriptEnabled = true
 
         webview.settings.javaScriptCanOpenWindowsAutomatically = true
 
-            webview.loadUrl("https://arthamtrust.org" )
+            webview.loadUrl("https://arthamtrust.org" ) //The official website link
 
 
     }
@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    // overiding the back button so that it can act as back button as in browser
 
     override fun onBackPressed() {
         if (webview.canGoBack()) {
