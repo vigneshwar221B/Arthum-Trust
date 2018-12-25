@@ -1,8 +1,10 @@
-package com.example.vigneshwar.arthumtrust
+package com.myapp.vigneshwar.arthamtrust
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.vigneshwar.arthumtrust.MainActivity
+import com.example.vigneshwar.arthumtrust.R
 import java.lang.Exception
 
 class SplashActivity : AppCompatActivity() {
@@ -19,8 +21,8 @@ class SplashActivity : AppCompatActivity() {
 
             override fun run() {
                 try {
-                    Thread.sleep(5000) // calling mainactivity after 5 seconds
-                    val intent = Intent(baseContext,MainActivity::class.java)
+                    sleep(1000) // calling mainactivity after 1 seconds
+                    val intent = Intent(baseContext, MainActivity::class.java)
                     startActivity(intent)
                 }catch(e: Exception) {
                     e.printStackTrace()
